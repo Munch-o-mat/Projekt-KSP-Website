@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras & Informationen – KSP Explorer</title>
+    <meta name="description" content="Informationen und Links zum Kerbal Space Program Projekt">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="w-full h-16 bg-card/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between px-6 sticky top-0 z-50">
+        <!-- Brand / Logo -->
+        <div class="text-xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+            <a href="index.html">KSP Explorer</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-foreground/80">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <a href="sonnensystem.html" class="hover:text-primary transition-colors">Sonnensystem</a>
+            <a href="galerie.html" class="hover:text-primary transition-colors">Galerie</a>
+            <a href="extras.html" class="hover:text-primary transition-colors">Extras</a>
+        </div>
+
+        <!-- Search Bar Placeholder -->
+        <div class="flex items-center bg-secondary/50 rounded-full px-3 py-1.5 border border-white/5">
+            <i class="fas fa-search w-4 h-4 text-gray-400 mr-2"></i>
+            <input 
+                type="text" 
+                placeholder="Suche..." 
+                class="bg-black border-none outline-none text-sm text-white placeholder-gray-500 w-32 focus:w-48 transition-all"
+            />
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-3xl mx-auto space-y-12">
+            <div class="space-y-4">
+                <h1 class="text-3xl font-bold text-white border-b border-white/10 pb-4">Extras & Informationen</h1>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Willkommen im Informationsbereich. Hier finden Sie Details zum Projekt, Quellen und weiterführende Links zum Kerbal Space Program.
+                </p>
+            </div>
+
+            <section class="space-y-6">
+                <h2 class="text-2xl font-semibold text-primary">Über dieses Projekt</h2>
+                <div class="bg-card p-6 rounded-xl border border-white/5 space-y-4">
+                    <p class="text-gray-300">
+                        Diese interaktive Webseite wurde erstellt, um die Faszination des Kerbol-Systems darzustellen.
+                        Sie nutzt modernste Web-Technologien wie <strong>HTML</strong>, <strong>CSS</strong> und <strong>JavaScript</strong>, um ein immersives Erlebnis zu bieten.
+                    </p>
+                    <p class="text-gray-300">
+                        Das Design orientiert sich an einem dunklen &quot;Space-Theme&quot;, das die Leere des Weltraums und die leuchtenden Farben der Himmelskörper einfängt.
+                    </p>
+                </div>
+            </section>
+
+            <section class="space-y-6">
+                <h2 class="text-2xl font-semibold text-primary">Nützliche Links</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="https://www.kerbalspaceprogram.com/" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-between p-4 bg-secondary rounded-lg hover:bg-primary/10 hover:text-primary transition-all group">
+                        <span class="font-medium">Offizielle KSP Webseite</span>
+                        <i class="fas fa-external-link-alt w-4 h-4 opacity-50 group-hover:opacity-100"></i>
+                    </a>
+                    <a href="https://wiki.kerbalspaceprogram.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-between p-4 bg-secondary rounded-lg hover:bg-primary/10 hover:text-primary transition-all group">
+                        <span class="font-medium">KSP Wiki</span>
+                        <i class="fas fa-external-link-alt w-4 h-4 opacity-50 group-hover:opacity-100"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-4 bg-card border-t border-white/10 text-center text-sm text-gray-400">
+        <div class="container mx-auto px-4 flex justify-center space-x-6">
+            <a href="impressum.html" class="hover:text-primary transition-colors">Impressum</a>
+            <span>|</span>
+            <a href="quellen.html" class="hover:text-primary transition-colors">Quellenhinweise</a>
+        </div>
+    </footer>
+</body>
+</html>
+

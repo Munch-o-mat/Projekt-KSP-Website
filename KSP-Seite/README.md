@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KSP Explorer – Statische HTML-Webseite
 
-## Getting Started
+Diese Webseite wurde von einer Next.js-Anwendung in eine statische HTML/CSS/JavaScript-Seite konvertiert.
 
-First, run the development server:
+## Projektbeschreibung
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Eine interaktive Webseite über das Kerbal Space Program (KSP) Sonnensystem. Die Seite präsentiert Informationen über die Planeten und Monde des Kerbol-Systems mit einem modernen, dunklen Space-Theme.
+
+## Struktur
+
+```
+/
+├── index.html          # Home-Seite
+├── sonnensystem.html   # Sonnensystem-Seite mit interaktiver Planetenauswahl
+├── galerie.html        # Galerie mit Modal-Ansicht
+├── extras.html         # Extras & Informationen
+├── css/
+│   └── styles.css      # Alle Styles (ersetzt Tailwind CSS)
+├── js/
+│   ├── main.js         # Gemeinsame Funktionalität
+│   ├── sonnensystem.js # Planetenauswahl-Logik
+│   └── galerie.js      # Modal-Funktionalität
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologien
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **HTML5**: Semantisches Markup
+- **CSS3**: Custom CSS mit CSS-Variablen für Theme-Farben
+- **Vanilla JavaScript**: ES6+ ohne Frameworks
+- **Font Awesome 6**: Icons via CDN
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Verwendung
 
-## Learn More
+### Entwicklungsserver (empfohlen)
 
-To learn more about Next.js, take a look at the following resources:
+Für die Entwicklung mit Live-Reload-Funktionalität:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Installieren Sie die Abhängigkeiten:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Starten Sie den Entwicklungsserver:
+   ```bash
+   npm run dev
+   ```
+   oder
+   ```bash
+   npm start
+   ```
 
-## Deploy on Vercel
+Der Server startet automatisch auf `http://localhost:3000` und öffnet die Seite im Browser. Änderungen an HTML, CSS oder JavaScript-Dateien werden automatisch im Browser aktualisiert.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Statische Nutzung
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Alternativ können Sie die Seite auch direkt öffnen:
+1. Öffnen Sie `index.html` in einem modernen Webbrowser
+2. Keine Installation oder Build-Prozess erforderlich
+3. Die Seite funktioniert vollständig statisch
+
+## Features
+
+- **Home-Seite**: Hero-Section mit Navigationskarten
+- **Sonnensystem**: Interaktive Planetenauswahl mit Detailansicht
+- **Galerie**: Grid-Layout mit Modal für größere Ansicht
+- **Extras**: Informationen und Links zum Projekt
+
+## Browser-Kompatibilität
+
+Moderne Browser mit ES6+ Unterstützung:
+- Chrome/Edge (neueste Versionen)
+- Firefox (neueste Versionen)
+- Safari (neueste Versionen)
+
+## Design
+
+Das Design verwendet ein dunkles Space-Theme mit:
+- Dunkelblauer Hintergrund (#0b1021)
+- Goldener Akzentfarbe (#f59e0b)
+- Gradient-Text-Effekte
+- Smooth Transitions und Hover-Effekte
+- Responsive Design für mobile und Desktop-Geräte
+
+## Hinweise
+
+Diese Seite wurde von einer Next.js-Anwendung konvertiert. Die ursprünglichen Next.js-Dateien wurden entfernt, da sie für die statische Version nicht mehr benötigt werden.

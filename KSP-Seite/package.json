@@ -2,27 +2,13 @@
   "name": "ksp-temp",
   "version": "0.1.0",
   "private": true,
+  "description": "Statische HTML-Webseite für KSP Explorer - konvertiert von Next.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "lucide-react": "^0.562.0",
-    "mongodb": "^7.0.0",
-    "next": "16.1.0",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "dev": "live-server --port=3000 --open=index.html",
+    "start": "live-server --port=3000 --open=index.html"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.0",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1"
   }
 }
