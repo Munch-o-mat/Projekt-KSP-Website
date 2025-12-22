@@ -24,15 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
     planets.forEach((planet) => {
         const button = document.createElement('button');
         button.className = `group flex flex-col items-center space-y-2 transition-all duration-300 ${
-            selectedPlanet.id === planet.id ? 'scale-110 opacity-100' : 'opacity-50 hover:opacity-80'
+            selectedPlanet.id === planet.id ? 'scale-110 opacity-100' : 'opacity-50 hover:opac-80'
         }`;
         button.setAttribute('data-planet-id', planet.id);
 
         const circle = document.createElement('div');
-        circle.className = `rounded-full shadow-lg ${planet.color} ${planet.size} group-hover:shadow-primary/50 transition-shadow`;
+        circle.className = `rounded-full shadow-lg ${planet.color} ${planet.size} g-h:sh-prim/50 trans-shadow`;
 
         const span = document.createElement('span');
-        span.className = 'text-sm font-medium text-gray-300 group-hover:text-white';
+        span.className = 'text-sm font-medium text-gray-300 g-h:text-white';
         span.textContent = planet.name;
 
         button.appendChild(circle);

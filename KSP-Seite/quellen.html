@@ -11,28 +11,37 @@
 <body>
     <!-- Navbar -->
     <nav class="w-full h-16 bg-card/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between px-6 sticky top-0 z-50">
-        <!-- Brand / Logo -->
-        <div class="text-xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
-            <a href="index.html">KSP Explorer</a>
+        <!-- Brand / Toggle -->
+        <div class="nav-brand-menu">
+            <button type="button" class="text-xl font-bold bg-grad-to-r from-primary to-orange-400 bg-clip-text text-trans brand-toggle" data-nav-toggle aria-controls="brand-menu-panel" aria-expanded="false">
+                <span class="brand-label">KSP Explorer</span>
+                <span class="brand-caret" aria-hidden="true"></span>
+            </button>
+            <div id="brand-menu-panel" class="brand-menu-panel" hidden>
+                <a href="index.html" class="brand-menu-link">Home</a>
+                <a href="sonnensystem.html" class="brand-menu-link">Sonnensystem</a>
+                <a href="galerie.html" class="brand-menu-link">Galerie</a>
+                <a href="extras.html" class="brand-menu-link">Extras</a>
+                <a href="hilfe.html" class="brand-menu-link">Hilfe</a>
+                <a href="kontakt.html" class="brand-menu-link">Kontakt</a>
+            </div>
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-foreground/80">
-            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
-            <a href="sonnensystem.html" class="hover:text-primary transition-colors">Sonnensystem</a>
-            <a href="galerie.html" class="hover:text-primary transition-colors">Galerie</a>
-            <a href="extras.html" class="hover:text-primary transition-colors">Extras</a>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-fg/80">
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="hover:text-prim trans-colors">Home</a>
+                <a href="sonnensystem.html" class="hover:text-prim trans-colors">Sonnensystem</a>
+                <a href="galerie.html" class="hover:text-prim trans-colors">Galerie</a>
+                <a href="extras.html" class="hover:text-prim trans-colors">Extras</a>
+            </div>
+            <span class="text-gray-600">|</span>
+            <div class="flex items-center space-x-6">
+                <a href="hilfe.html" class="hover:text-prim trans-colors">Hilfe</a>
+                <a href="kontakt.html" class="hover:text-prim trans-colors">Kontakt</a>
+            </div>
         </div>
 
-        <!-- Search Bar Placeholder -->
-        <div class="flex items-center bg-secondary/50 rounded-full px-3 py-1.5 border border-white/5">
-            <i class="fas fa-search w-4 h-4 text-gray-400 mr-2"></i>
-            <input 
-                type="text" 
-                placeholder="Suche..." 
-                class="bg-black border-none outline-none text-sm text-white placeholder-gray-500 w-32 focus:w-48 transition-all"
-            />
-        </div>
     </nav>
 
     <!-- Main Content -->
@@ -55,9 +64,9 @@
                                 Offizielle Webseite und Spielinformationen
                             </p>
                             <a href="https://www.kerbalspaceprogram.com/" target="_blank" rel="noopener noreferrer"
-                                class="flex items-center text-primary hover:text-orange-400 transition-colors group">
+                                class="flex items-center text-primary hover:text-orange-400 trans-colors group">
                                 <span>www.kerbalspaceprogram.com</span>
-                                <i class="fas fa-external-link-alt w-4 h-4 ml-2 opacity-50 group-hover:opacity-100"></i>
+                                <i class="fas fa-external-link-alt w-4 h-4 ml-2 opacity-50 g-h:opacity-100"></i>
                             </a>
                         </div>
                         <div>
@@ -66,9 +75,9 @@
                                 Umfassende Community-Wiki mit detaillierten Informationen zum Spiel
                             </p>
                             <a href="https://wiki.kerbalspaceprogram.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer"
-                                class="flex items-center text-primary hover:text-orange-400 transition-colors group">
+                                class="flex items-center text-primary hover:text-orange-400 trans-colors group">
                                 <span>wiki.kerbalspaceprogram.com</span>
-                                <i class="fas fa-external-link-alt w-4 h-4 ml-2 opacity-50 group-hover:opacity-100"></i>
+                                <i class="fas fa-external-link-alt w-4 h-4 ml-2 opacity-50 g-h:opacity-100"></i>
                             </a>
                         </div>
                     </div>
@@ -85,9 +94,9 @@
                                 Icons und Symbole für die Webseite
                             </p>
                             <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"
-                                class="flex items-center text-primary hover:text-orange-400 transition-colors group">
+                                class="flex items-center text-primary hover:text-orange-400 trans-colors group">
                                 <span>fontawesome.com</span>
-                                <i class="fas fa-external-link-alt w-4 h-4 ml-2 opacity-50 group-hover:opacity-100"></i>
+                                <i class="fas fa-external-link-alt w-4 h-4 ml-2 opacity-50 g-h:opacity-100"></i>
                             </a>
                         </div>
                         <div>
@@ -163,11 +172,12 @@
     <!-- Footer -->
     <footer class="w-full py-4 bg-card border-t border-white/10 text-center text-sm text-gray-400">
         <div class="container mx-auto px-4 flex justify-center space-x-6">
-            <a href="impressum.html" class="hover:text-primary transition-colors">Impressum</a>
+            <a href="impressum.html" class="hover:text-prim trans-colors">Impressum</a>
             <span>|</span>
-            <a href="quellen.html" class="hover:text-primary transition-colors">Quellenhinweise</a>
+            <a href="quellen.html" class="hover:text-prim trans-colors">Quellenhinweise</a>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

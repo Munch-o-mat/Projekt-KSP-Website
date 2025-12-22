@@ -11,37 +11,46 @@
 <body>
     <!-- Navbar -->
     <nav class="w-full h-16 bg-card/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between px-6 sticky top-0 z-50">
-        <!-- Brand / Logo -->
-        <div class="text-xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
-            <a href="index.html">KSP Explorer</a>
+        <!-- Brand / Toggle -->
+        <div class="nav-brand-menu">
+            <button type="button" class="text-xl font-bold bg-grad-to-r from-primary to-orange-400 bg-clip-text text-trans brand-toggle" data-nav-toggle aria-controls="brand-menu-panel" aria-expanded="false">
+                <span class="brand-label">KSP Explorer</span>
+                <span class="brand-caret" aria-hidden="true"></span>
+            </button>
+            <div id="brand-menu-panel" class="brand-menu-panel" hidden>
+                <a href="index.html" class="brand-menu-link">Home</a>
+                <a href="sonnensystem.html" class="brand-menu-link">Sonnensystem</a>
+                <a href="galerie.html" class="brand-menu-link">Galerie</a>
+                <a href="extras.html" class="brand-menu-link">Extras</a>
+                <a href="hilfe.html" class="brand-menu-link">Hilfe</a>
+                <a href="kontakt.html" class="brand-menu-link">Kontakt</a>
+            </div>
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-foreground/80">
-            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
-            <a href="sonnensystem.html" class="hover:text-primary transition-colors">Sonnensystem</a>
-            <a href="galerie.html" class="hover:text-primary transition-colors">Galerie</a>
-            <a href="extras.html" class="hover:text-primary transition-colors">Extras</a>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-fg/80">
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="hover:text-prim trans-colors">Home</a>
+                <a href="sonnensystem.html" class="hover:text-prim trans-colors">Sonnensystem</a>
+                <a href="galerie.html" class="hover:text-prim trans-colors">Galerie</a>
+                <a href="extras.html" class="hover:text-prim trans-colors">Extras</a>
+            </div>
+            <span class="text-gray-600">|</span>
+            <div class="flex items-center space-x-6">
+                <a href="hilfe.html" class="hover:text-prim trans-colors">Hilfe</a>
+                <a href="kontakt.html" class="hover:text-prim trans-colors">Kontakt</a>
+            </div>
         </div>
 
-        <!-- Search Bar Placeholder -->
-        <div class="flex items-center bg-secondary/50 rounded-full px-3 py-1.5 border border-white/5">
-            <i class="fas fa-search w-4 h-4 text-gray-400 mr-2"></i>
-            <input 
-                type="text" 
-                placeholder="Suche..." 
-                class="bg-black border-none outline-none text-sm text-white placeholder-gray-500 w-32 focus:w-48 transition-all"
-            />
-        </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="flex-grow container mx-auto px-4 py-8">
+    <main class="flex-grow container mx-auto px-4 py-8 home-hero">
         <div class="flex flex-col items-center justify-center space-y-16">
             <!-- Hero Section -->
-            <section class="text-center space-y-6 pt-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
-                <h1 class="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent pb-2">
-                    KSP Stock Sonnensystem
+            <section class="text-center space-y-6 pt-16 animate-in fade-in slide-bot-8 duration-700">
+                <h1 class="text-5xl md:text-7xl font-bold bg-grad-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-trans pb-2">
+                    Das KSP 1 Sonnensystem
                 </h1>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">
                     Entdecke die Planeten, Monde und Geheimnisse des Kerbal Space Program Universums.
@@ -53,21 +62,21 @@
                 <!-- Card 1: Sonnensystem -->
                 <a
                     href="sonnensystem.html"
-                    class="group relative overflow-hidden rounded-xl border border-white/10 bg-card p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                    class="group relative overflow-hidden rounded-xl border border-white/10 bg-card p-8 hover:b-prim/50 transition-all duration-300 hover:shadow-lg hover:sh-prim/10"
                 >
-                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-grad-to-br from-primary/5 to-transparent opacity-0 g-h:opacity-100 trans-opacity"></div>
                     <div class="relative z-10 flex flex-col items-start space-y-4">
-                        <div class="p-3 bg-secondary rounded-lg group-hover:scale-110 transition-transform">
+                        <div class="p-3 bg-secondary rounded-lg g-h:scale-110 trans-xform">
                             <i class="fas fa-globe w-8 h-8 text-primary"></i>
                         </div>
-                        <h2 class="text-2xl font-bold text-white group-hover:text-primary transition-colors">
+                        <h2 class="text-2xl font-bold text-white g-h:text-prim trans-colors">
                             Sonnensystem
                         </h2>
                         <p class="text-gray-400 text-sm">
                             Erkwinge das Kerbal-System. Alle Planeten und ihre Monde im Detail.
                         </p>
                         <div class="flex items-center text-primary text-sm font-medium mt-2">
-                            Erkunden <i class="fas fa-arrow-right ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            Erkunden <i class="fas fa-arrow-right ml-2 w-4 h-4 g-h:translate-x-1 trans-xform"></i>
                         </div>
                     </div>
                 </a>
@@ -75,21 +84,21 @@
                 <!-- Card 2: Galerie -->
                 <a
                     href="galerie.html"
-                    class="group relative overflow-hidden rounded-xl border border-white/10 bg-card p-8 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/10"
+                    class="group relative overflow-hidden rounded-xl border border-white/10 bg-card p-8 hover:border-blue/50 transition-all duration-300 hover:shadow-lg hover:sh-blue/10"
                 >
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-grad-to-br from-blue-400/5 to-transparent opacity-0 g-h:opacity-100 trans-opacity"></div>
                     <div class="relative z-10 flex flex-col items-start space-y-4">
-                        <div class="p-3 bg-secondary rounded-lg group-hover:scale-110 transition-transform">
+                        <div class="p-3 bg-secondary rounded-lg g-h:scale-110 trans-xform">
                             <i class="fas fa-images w-8 h-8 text-blue-400"></i>
                         </div>
-                        <h2 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                        <h2 class="text-2xl font-bold text-white g-h:text-blue-400 trans-colors">
                             Galerie
                         </h2>
                         <p class="text-gray-400 text-sm">
                             Visuelle Eindrücke und Screenshots aus dem Spiel.
                         </p>
                         <div class="flex items-center text-blue-400 text-sm font-medium mt-2">
-                            Ansehen <i class="fas fa-arrow-right ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            Ansehen <i class="fas fa-arrow-right ml-2 w-4 h-4 g-h:translate-x-1 trans-xform"></i>
                         </div>
                     </div>
                 </a>
@@ -97,21 +106,21 @@
                 <!-- Card 3: Extras -->
                 <a
                     href="extras.html"
-                    class="group relative overflow-hidden rounded-xl border border-white/10 bg-card p-8 hover:border-green-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/10"
+                    class="group relative overflow-hidden rounded-xl border border-white/10 bg-card p-8 hover:b-grn/50 transition-all duration-300 hover:shadow-lg hover:sh-grn/10"
                 >
-                    <div class="absolute inset-0 bg-gradient-to-br from-green-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-grad-to-br from-grn-400/5 to-transparent opacity-0 g-h:opacity-100 trans-opacity"></div>
                     <div class="relative z-10 flex flex-col items-start space-y-4">
-                        <div class="p-3 bg-secondary rounded-lg group-hover:scale-110 transition-transform">
+                        <div class="p-3 bg-secondary rounded-lg g-h:scale-110 trans-xform">
                             <i class="fas fa-info-circle w-8 h-8 text-green-400"></i>
                         </div>
-                        <h2 class="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
+                        <h2 class="text-2xl font-bold text-white g-h:text-green-400 trans-colors">
                             Extras & Infos
                         </h2>
                         <p class="text-gray-400 text-sm">
                             Hintergrundinformationen, Quellen und weitere Details.
                         </p>
                         <div class="flex items-center text-green-400 text-sm font-medium mt-2">
-                            Mehr Infos <i class="fas fa-arrow-right ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            Mehr Infos <i class="fas fa-arrow-right ml-2 w-4 h-4 g-h:translate-x-1 trans-xform"></i>
                         </div>
                     </div>
                 </a>
@@ -122,11 +131,12 @@
     <!-- Footer -->
     <footer class="w-full py-4 bg-card border-t border-white/10 text-center text-sm text-gray-400">
         <div class="container mx-auto px-4 flex justify-center space-x-6">
-            <a href="impressum.html" class="hover:text-primary transition-colors">Impressum</a>
+            <a href="impressum.html" class="hover:text-prim trans-colors">Impressum</a>
             <span>|</span>
-            <a href="quellen.html" class="hover:text-primary transition-colors">Quellenhinweise</a>
+            <a href="quellen.html" class="hover:text-prim trans-colors">Quellenhinweise</a>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

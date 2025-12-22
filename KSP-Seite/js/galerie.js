@@ -4,7 +4,7 @@ const galleryItems = [
     { id: 2, title: "Orbit um Kerbin", color: "from-blue-400 to-blue-600" },
     { id: 3, title: "Landung auf dem Mün", color: "from-gray-300 to-gray-500" },
     { id: 4, title: "Duna Horizont", color: "from-red-400 to-orange-500" },
-    { id: 5, title: "Jool Aufgang", color: "from-green-400 to-green-600" },
+    { id: 5, title: "Jool Aufgang", color: "from-grn-400 to-green-600" },
     { id: 6, title: "Rover Einsatz", color: "from-yellow-600 to-orange-700" },
 ];
 
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create gallery items
     galleryItems.forEach((item) => {
         const div = document.createElement('div');
-        div.className = 'group relative aspect-video bg-card rounded-xl overflow-hidden cursor-pointer border border-white/5 hover:border-primary/50 transition-all';
+        div.className = 'group relative aspect-video bg-card rounded-xl overflow-hidden cursor-pointer border border-white/5 hover:b-prim/50 transition-all';
         div.setAttribute('data-item-id', item.id);
 
         const gradientDiv = document.createElement('div');
-        gradientDiv.className = `absolute inset-0 bg-gradient-to-br ${item.color} opacity-80 group-hover:opacity-100 transition-opacity`;
+        gradientDiv.className = `absolute inset-0 bg-grad-to-br ${item.color} opacity-80 g-h:opacity-100 trans-opacity`;
 
         const overlayDiv = document.createElement('div');
-        overlayDiv.className = 'absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-[2px]';
+        overlayDiv.className = 'absolute inset-0 flex flex-col items-center justify-center opacity-0 g-h:opacity-100 trans-opacity bg-black/40 backdrop-blur-[2px]';
 
         const icon = document.createElement('i');
         icon.className = 'fas fa-search-plus w-8 h-8 text-white mb-2';
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to open modal
     function openModal(item) {
-        modalImage.className = `w-full h-full bg-gradient-to-br ${item.color} flex items-center justify-center`;
+        modalImage.className = `w-full h-full bg-grad-to-br ${item.color} flex items-center justify-center`;
         modalTitle.textContent = item.title;
         modalTitleBottom.textContent = item.title;
         modal.style.opacity = '0';
