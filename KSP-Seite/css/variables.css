@@ -1,0 +1,13 @@
+/* CSS Variables - Theme Colors (gekürzte Namen) */
+:root {
+  --bg: #0b1021;
+  --fg: #f8fafc;
+  --prim: #f59e0b;
+  --prim-fg: #000000;
+  --sec: #1e293b;
+  --sec-fg: #f8fafc;
+  --card: #131a2b;
+  --card-fg: #f8fafc;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+

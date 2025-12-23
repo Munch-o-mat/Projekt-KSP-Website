@@ -1,0 +1,116 @@
+/* Font Awesome Icon Styles */
+.fas, .far, .fal, .fab {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Icon sizing - Font Awesome icons work with font-size */
+.fas.w-4, .far.w-4, .fal.w-4, .fab.w-4 {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+}
+
+.fas.w-6, .far.w-6, .fal.w-6, .fab.w-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.fas.w-8, .far.w-8, .fal.w-8, .fab.w-8 {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+/* Brand toggle drop-down */
+.nav-brand-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav-brand-menu {
+    display: none;
+  }
+}
+
+.brand-toggle {
+  background: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.brand-toggle:focus-visible {
+  outline: 2px solid var(--prim);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+.brand-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--fg);
+  transition: transform 0.2s ease, border-top-color 0.2s ease;
+}
+
+.brand-toggle[aria-expanded="true"] .brand-caret {
+  transform: rotate(180deg);
+  border-top-color: var(--prim);
+}
+
+.brand-menu-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  min-width: 220px;
+  padding: 0.75rem;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 60;
+}
+
+.brand-menu-panel.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.brand-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.35rem;
+  border-radius: 0.5rem;
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.brand-menu-link:hover {
+  color: var(--prim);
+  background-color: rgba(245, 158, 11, 0.1);
+}
+

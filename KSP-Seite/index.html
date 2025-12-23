@@ -6,19 +6,22 @@
     <title>KSP Explorer – Stock Sonnensystem</title>
     <meta name="description" content="Interaktive Webseite über das Kerbal Space Program Sonnensystem">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="w-full h-16 bg-card/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between px-6 sticky top-0 z-50">
         <!-- Brand / Toggle -->
-        <div class="nav-brand-menu">
+        <div class="nav-brand-menu md:hidden">
             <button type="button" class="text-xl font-bold bg-grad-to-r from-primary to-orange-400 bg-clip-text text-trans brand-toggle" data-nav-toggle aria-controls="brand-menu-panel" aria-expanded="false">
                 <span class="brand-label">KSP Explorer</span>
                 <span class="brand-caret" aria-hidden="true"></span>
             </button>
             <div id="brand-menu-panel" class="brand-menu-panel" hidden>
-                <a href="index.html" class="brand-menu-link">Home</a>
+                <a href="index.html" class="brand-menu-link">Startseite</a>
                 <a href="sonnensystem.html" class="brand-menu-link">Sonnensystem</a>
                 <a href="galerie.html" class="brand-menu-link">Galerie</a>
                 <a href="extras.html" class="brand-menu-link">Extras</a>
